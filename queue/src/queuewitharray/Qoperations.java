@@ -2,11 +2,15 @@ package queuewitharray;
 
 public class Qoperations {
 
-int qSize,front=0,rear=0;
+int qSize,front,rear;
 int numarray[];
+
   public Qoperations(int qSize) {
 	super();
+	this.front=0;
+	this.rear=0;
 	this.qSize = qSize;
+	this.numarray=new int[qSize];
 }
   
   public boolean enque(int ele){
@@ -16,8 +20,7 @@ int numarray[];
 		  numarray[rear]=ele;  
 		  return true;
 	  } 
-	  return false;
-	 
+	  return false;	 
   }
 
 public void deenque(){
