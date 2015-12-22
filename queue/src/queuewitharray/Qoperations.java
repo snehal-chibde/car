@@ -14,18 +14,29 @@ int numarray[];
 }
   
   public boolean enque(int ele){
-  
 	  if(rear<=qSize-1){
 		  
 		  numarray[rear]=ele;  
+		  rear++;
 		  return true;
-	  } 
-	  return false;	 
-  }
+	
+	  }
+	  else
+		  return false;
+	   }
 
 public void deenque(){
 	
+	  front++;
 	  
   }
 	
+public void display(){
+	System.out.println("the queue elements are ");
+	for (int i=front;i<rear;i++){
+		System.out.println(numarray[i]);
+	}
+ }
+
+
 }
