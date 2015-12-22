@@ -25,9 +25,15 @@ int numarray[];
 		  return false;
 	   }
 
-public void deenque(){
+public void deque(){
+	if(front<rear)
+	{
+		front++;
+		System.out.println("ele dequed");
+	}
 	
-	  front++;
+	else
+		System.out.println("underflow");
 	  
   }
 	
@@ -37,6 +43,4 @@ public void display(){
 		System.out.println(numarray[i]);
 	}
  }
-
-
 }
