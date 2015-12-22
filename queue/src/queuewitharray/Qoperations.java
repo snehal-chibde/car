@@ -2,24 +2,27 @@ package queuewitharray;
 
 public class Qoperations {
 
-int qSize;
-	
+int qSize,front=0,rear=0;
+int numarray[];
   public Qoperations(int qSize) {
 	super();
 	this.qSize = qSize;
 }
   
-  public void enque(){
-	  
+  public boolean enque(int ele){
+  
+	  if(rear<=qSize-1){
+		  
+		  numarray[rear]=ele;  
+		  return true;
+	  } 
+	  return false;
+	 
   }
 
 public void deenque(){
 	
 	  
   }
-
-  
-  
-  
 	
 }
