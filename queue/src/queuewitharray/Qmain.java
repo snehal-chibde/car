@@ -1,17 +1,20 @@
 package queuewitharray;
 
-public class Qmain {
-
-	
+public class Qmain 
+{
 	public static void main(String args[]){
-		 Qoperations op=new Qoperations(5);
-		  op.enque(25);
-		  op.enque(5);
-		  op.enque(50);
-		  op.display();	
-		  op.deque();
-		  op.display();	
-		}	
+		
+		Qmethods qm=new Qoperations(5);
+		qm.enque(5);
+		qm.enque(45);
+		qm.enque(5);
+		qm.enque(25);
+		qm.deque();
+		qm.display();
+		Qmethods arr=new Arraylist(8);
+		arr.enque(12);
+		arr.display();
+		 
+	}	
 	
-	
-}
+	}
