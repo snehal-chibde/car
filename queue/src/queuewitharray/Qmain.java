@@ -6,15 +6,16 @@ public class Qmain
 		
 		Qmethods qm=new Qoperations(5);
 		qm.enque(5);
-		qm.enque(45);
-		qm.enque(5);
+		qm.enque(4);
+		qm.enque(2);
 		qm.enque(25);
+		qm.display();
 		qm.deque();
 		qm.display();
 		Qmethods arr=new Arraylist(8);
-		arr.enque(12);
-		arr.display();
-		 
+		arr.enque(80);
+		arr.enque(66);
+		 arr.display();
 	}	
 	
 	}

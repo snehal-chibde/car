@@ -22,16 +22,26 @@ public class Arraylist  extends Qmethods {
 	  public boolean enque(int ele)
 	  {
 		  
-		  
+		  a.add(ele);
 		 	return false;
 		   }
 
 	public void deque(){
+		if (a.isEmpty())
+		{
+			System.out.print("empty list");
+		}
+		else
+		{
+			a.remove(0);
+		}
 	  }
 		
 	public void display(){
-		System.out.println("the queue elements are ");
+		System.out.println("arraylist ele are : " +a);
 			
+			
+		
 		 }
 	   
 	 }
